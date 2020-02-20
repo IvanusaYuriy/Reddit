@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAniow+MQ490WNjri1FbUAvQAAAAACAAAAAAAQZgAAAAEAACAAAADNiM/ggD5DLQwv5PrKoGVmomdmLJSbcT3Po+YGiHaptwAAAAAOgAAAAAIAACAAAAAH9WbPsoXQ8M/I2SpYtPinDPzhDAQKbp9JRVW/gm7heIAAAAAbfzLPniXlK4Fihe+sHrP4JFHdVjV7O3XihTXR7Z7Bu8smVe5AKHptS98HFDg5mEnD/Lwr0XLeJqcXUWW/G8tfr8X7FHNqca0phJGtlXPruDnIHZBP7FQ94Dm3kXdfM8rU/LKOjSQ+UmKm+Q0AyrapKAS4BDvJOH1AKFGUVJ3mukAAAAAEQHwpkTttOI2EoG+jj6mRAU0LYCO7E9aVtFJ1VU/f3jvg4t9uQSS8r2DMyfpCsTZSMyT87FVbM0GtY0NELley</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="BlogPostsContext">
+      <Value>Data Source=tcp:reddit2020dbserver.database.windows.net,1433%3bInitial Catalog=Blog20200220082508_db%3bUser Id=ivanusayurii%40reddit2020dbserver%3bPassword=Krawiec251</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Blog.Models.BlogPostsContext">
+      <Value>Data Source=tcp:reddit2020dbserver.database.windows.net,1433%3bInitial Catalog=Blog20200220082508_db%3bUser Id=ivanusayurii%40reddit2020dbserver%3bPassword=Krawiec251</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

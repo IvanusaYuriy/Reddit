@@ -1,0 +1,37 @@
+body {
+	height: 100%;
+}
+#footer {
+    position: fixed; 
+    left: 0; bottom: 0;
+ 
+    padding-bottom: 5px; 
+    background: #1544a8; 
+    color: #fff;
+    width: 100%;
+    margin-top: 150%;
+    text-align: center;
+   }
+
+#block2 {
+    padding: 20px; /* Поля вокруг изображения */
+    margin-right: 10px; /* Отступ справа */
+    outline: 1px solid #666; /* Параметры рамки */
+    background: #f0f0f0; /* Цвет фона */
+    float: left; 
+}
+#block1
+{
+    margin-top:20px;
+}
+#new 
+{
+    padding-right: 100px;
+    padding: 5px;
+    background :#14c00e;
+}
+
+#edit
+{
+    margin-left: 20px;
+}

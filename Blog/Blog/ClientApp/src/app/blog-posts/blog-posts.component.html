@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <title>footer</title>
+ </head> 
+ <body>
+  <header>
+    <img src="https://assets1.ignimgs.com/2019/11/12/sonic-the-hedgehog-button-new-1573566584519.jpg" width="250" height="250" alt="Sonic">
+  </header>
+  <div id="block1" *ngIf="(blogPosts$ | async)?.length>0" >
+      <div id="block2" *ngFor="let blogPost of (blogPosts$ | async)">
+        <p><a id="new" [routerLink]="['/add']" class="btn btn-primary float-right mb-3">New comment</a></p>
+        <textarea readonly rows="5" cols="25">{{ blogPost.text }}</textarea>
+        <h3>{{ blogPost.authorName }}</h3>
+        <h3>{{ blogPost.createAt | date: "dd.MM.y" }}</h3>
+        <a id="edit" [routerLink]="['/blogpost/edit/', blogPost.id]" class="btn btn-primary btn-sm float-right">Edit</a>
+        <a [routerLink]="" (click)="delete(blogPost.id)" class="btn btn-danger btn-sm float-right">Delete</a>
+      </div>
+  </div>
+  <div id="footer">
+    &copy; Yurii Ivanusa 0939318513 20/02/20
+   </div>
+ </body> 
